@@ -1,8 +1,16 @@
 /******* site *******/
 
+@font-face {
+  font-family: font_1;
+  src: url(federal-escort/federalescort.ttf);
+}
+@font-face {
+  font-family: font_2;
+  src: url(federal-escort/federalescortcondital.ttf);
+}
 h1 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 3rem;
+  font-family: font_1;
+  font-size: 4rem;
   text-align: center;
 }
 body {
@@ -13,6 +21,27 @@ body {
   background-color: black;
   margin-left: 7%;
   margin-right: 7%;
+}
+article {
+  position: relative;
+}
+
+.heart {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  width: 15%;
+}
+
+.header ul {
+  display: flex;
+  font-family: font_2;
+  font-size: 1.5rem;
+  margin-left: 29%;
+  margin-bottom: 5%;
+}
+li:hover {
+  transform: scale(1.2);
 }
 
 /******* kategori *******/
@@ -32,6 +61,11 @@ li a {
   color: whitesmoke;
   text-decoration: none;
 }
+.liste li {
+  font-family: font_2;
+  font-size: 1.5rem;
+  padding: 10%;
+}
 
 /******* produktliste *******/
 
@@ -44,7 +78,10 @@ li a {
 .produkter img {
   width: 100%;
 }
-
+p {
+  font-family: font_2;
+  font-size: 1rem;
+}
 /******* produkt *******/
 .produkt_1 {
   display: grid;
@@ -55,7 +92,44 @@ li a {
   width: 75%;
 }
 h2 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "font_1";
   font-size: 2rem;
   text-align: center;
+  margin-bottom: 10%;
+}
+
+.heart_2 {
+  position: absolute;
+  top: 3%;
+  right: 63%;
+  width: 6%;
+}
+.sale {
+  position: absolute;
+  top: 1%;
+  right: 69%;
+  width: 30%;
+}
+h3 {
+  margin-top: 7%;
+  font-family: "font_1";
+  font-size: 1.1rem;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .header ul {
+    font-size: 1rem;
+    margin-left: 7%;
+    margin-bottom: 8%;
+    margin-top: 12%;
+  }
+  li:hover {
+    transform: scale(1.2);
+  }
 }
