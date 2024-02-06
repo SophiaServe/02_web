@@ -2,16 +2,20 @@
 
 @font-face {
   font-family: font_1;
-  src: url(federal-escort/federalescort.ttf);
+  src: url(fonts/federal-escort/federalescort.ttf);
 }
 @font-face {
   font-family: font_2;
-  src: url(federal-escort/federalescortcondital.ttf);
+  src: url(fonts/federal-escort/federalescort3dital.ttf);
 }
 h1 {
   font-family: font_1;
   font-size: 4rem;
   text-align: center;
+}
+h3 {
+  font-family: font_1;
+  font-size: 1.5rem;
 }
 body {
   padding: 0;
@@ -26,18 +30,11 @@ article {
   position: relative;
 }
 
-.heart {
-  position: absolute;
-  top: 2%;
-  right: 5%;
-  width: 15%;
-}
-
 .header ul {
   display: flex;
   font-family: font_2;
   font-size: 1.5rem;
-  margin-left: 29%;
+  margin-left: 24%;
   margin-bottom: 5%;
 }
 li:hover {
@@ -69,51 +66,44 @@ li a {
 
 /******* produktliste *******/
 
-.produkter {
+.main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 6%;
 }
-.produkter img {
+.main img {
   width: 100%;
+  height: auto;
+  align-items: center;
 }
 p {
-  font-family: font_2;
+  font-family: font_1;
   font-size: 1rem;
 }
 /******* produkt *******/
-.produkt_1 {
+
+.buy img {
+  width: 40%;
+  margin-left: 34%;
+}
+.singleproduct img {
+  width: 70%;
+  margin-left: 20%;
+}
+.h2_product {
+  font-size: 3rem;
+  font-family: font_1;
+  margin-left: 7%;
+}
+.singleproduct_2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 10%;
 }
-.produkt_1 img {
-  width: 75%;
-}
-h2 {
-  font-family: "font_1";
+.soldout_css {
   font-size: 2rem;
-  text-align: center;
-  margin-bottom: 10%;
-}
-
-.heart_2 {
-  position: absolute;
-  top: 3%;
-  right: 63%;
-  width: 6%;
-}
-.sale {
-  position: absolute;
-  top: 1%;
-  right: 69%;
-  width: 30%;
-}
-h3 {
-  margin-top: 7%;
-  font-family: "font_1";
-  font-size: 1.1rem;
+  color: red;
+  font-family: font_2;
 }
 
 @media (max-width: 800px) {
@@ -125,11 +115,27 @@ h3 {
   }
   .header ul {
     font-size: 1rem;
-    margin-left: 7%;
+    margin-left: 1%;
     margin-bottom: 8%;
     margin-top: 12%;
+    margin-right: 0%;
   }
   li:hover {
     transform: scale(1.2);
+  }
+
+  .liste ul {
+    margin-right: 20%;
+    gap: 30%;
+    margin-top: 15%;
+  }
+  p {
+    font-family: font_1;
+    font-size: 0.7rem;
+  }
+
+  .buy img {
+    width: 70%;
+    margin-left: 27%;
   }
 }
