@@ -15,7 +15,7 @@ h1 {
 }
 h3 {
   font-family: font_1;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 body {
   padding: 0;
@@ -63,6 +63,9 @@ li a {
   font-size: 1.5rem;
   padding: 10%;
 }
+.kategori_liste {
+  font-family: font_1;
+}
 
 /******* produktliste *******/
 
@@ -94,11 +97,12 @@ p {
 .h2_product {
   font-size: 3rem;
   font-family: font_1;
-  margin-left: 7%;
+  margin-left: 20%;
 }
 .singleproduct_2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-left: 15%;
 }
 .soldout_css {
   font-size: 2rem;
@@ -125,7 +129,7 @@ p {
   }
 
   .liste ul {
-    margin-right: 20%;
+    margin-right: 0%;
     gap: 30%;
     margin-top: 15%;
   }
@@ -137,5 +141,44 @@ p {
   .buy img {
     width: 70%;
     margin-left: 27%;
+  }
+
+  .liste ul {
+    margin-right: 50%;
+    padding: 0;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3%;
+  }
+  .singleproduct img {
+    width: 100%;
+    margin-left: 5%;
+  }
+  .h2_product {
+    font-size: 1.5rem;
+    font-family: font_1;
+    margin-left: 15%;
+  }
+  .singleproduct_2 {
+    display: grid;
+    margin-left: 0%;
+    margin-top: 7%;
+  }
+  .price {
+    margin-left: 20%;
+  }
+  .discount {
+    margin-left: 20%;
+  }
+  .newProductId {
+    margin-left: 20%;
+  }
+  .soldout_css {
+    font-size: 1.5rem;
+    color: red;
+    font-family: font_2;
+    margin-left: 20%;
   }
 }
