@@ -15,11 +15,15 @@ function showProduct(product) {
   const copy = template.cloneNode(true);
 
   copy.querySelector("h3").textContent = product.productdisplayname;
-  if (product.soldout) {
-    copy.querySelector("article").classList.add("soldOut");
-  }
   copy.querySelector("a").href = `produkt.html?ProductId=${product.id}`;
   copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
+
+  if (product.discount) {
+    console.log("hej");
+    copy.querySelector(".sale span").textContent = product.discount + "%";
+  } else {
+    copy.querySelector(".sale").remove();
+  }
 
   copy.querySelector(".subtle .span_1").textContent = product.articletype;
   copy.querySelector(".subtle .span_2").textContent = product.brandname;

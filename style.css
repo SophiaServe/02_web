@@ -84,6 +84,10 @@ p {
   font-family: font_1;
   font-size: 1rem;
 }
+.sale {
+  font-family: font_1;
+  color: red;
+}
 /******* produkt *******/
 
 .buy img {
